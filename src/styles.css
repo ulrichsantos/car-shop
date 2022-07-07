@@ -9,9 +9,61 @@ body {
 }
 
 .box {
+  width: 50%;
+  height: auto;
+
   display: flex;
+  align-items: center;
+
+  margin: 50px;
+}
+
+.wrapper-global {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-layout {
+  display:inline-flex;
+  gap: 15px;
+}
+
+.wrapper-search {
+  display: flex;
+  align-items: center;
+
+  font-size: 23px;
+}
+
+.wrapper-layout .wrapper-layout2 {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+}
+
+.wrapper-layout .wrapper-layout3 {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+}
+
+.box2 {
   width: 50%;
   height: 230px;
+
+  display: flex;
 
   margin: 50px;
   border-radius: 10px;
@@ -87,6 +139,7 @@ body {
 
   color: black;
   font-size: 20px;
+
 }
 
 .wrapper-infos .financing{
