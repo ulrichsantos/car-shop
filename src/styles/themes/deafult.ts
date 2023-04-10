@@ -4,6 +4,7 @@ export const defaultTheme = {
     'base-black': '#000',
 
     'base-background': '#1c1c1c',
+    'base-header': '#2a2a2a'
   },
   textSizes: {
     "title-title-xl": "3rem",
