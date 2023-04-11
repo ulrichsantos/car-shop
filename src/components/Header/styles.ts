@@ -5,6 +5,9 @@ export const HeaderContainer = styled.header`
   height: 4rem;
   background: ${({ theme }) => theme.colors["base-header"]};
   padding-inline: 1.5rem;
+  position: absolute;
+  z-index: 99;
+  opacity: 0.8;
 
   display: flex;
   align-items: center;
@@ -13,15 +16,25 @@ export const HeaderContainer = styled.header`
 
 export const HeaderIcons = styled.div`
   display: flex;
-  gap: 1.25rem;
+  gap: 2rem;
   font-weight: 700;
-  transition: 0.2s ease-in-out;
+  transition: 0.5s;
 
   p:hover {
-    transform: scale(1.10);
-  }
+    transform: scale(1.05);
+    color: ${({ theme }) => theme.colors["base-white"]};
+  }  
 `
 
 export const Contact = styled.div`
-  
+  > button {
+    border: none;
+    background: ${({ theme }) => theme.colors["base-header"]};
+    color: ${({ theme }) => theme.colors["base-white"]};
+
+    :hover {
+      color: ${({ theme }) => theme.colors["base-hover"]};
+      transform: scale(1.05);
+    }
+  }
 `

@@ -6,14 +6,14 @@ import { WhatsappLogo } from 'phosphor-react'
 export function Header() {
   return (
     <HeaderContainer>
-      <Jeep size={40} />
+        <Jeep size={40} />
 
       <HeaderIcons>
         <NavLink to="/#">
           <p>NOVOS</p>
         </NavLink>
         <NavLink to="/#">
-        <p>SEMINOVOS</p>
+          <p>SEMINOVOS</p>
         </NavLink>
         <NavLink to="/#">
           <p>FINANCIAMENTO</p>
@@ -27,7 +27,9 @@ export function Header() {
       </HeaderIcons>
 
       <Contact>
-        <WhatsappLogo size={40}/>
+        <button>
+          <WhatsappLogo size={40} />
+        </button>
       </Contact>
     </HeaderContainer>
   )

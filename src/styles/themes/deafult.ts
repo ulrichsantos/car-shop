@@ -2,6 +2,10 @@ export const defaultTheme = {
   colors: {
     'base-white': '#fff',
     'base-black': '#000',
+    'base-hover': '#D3D3D3',
+    'base-orange': '#ffba00',
+    'base-blue': '#269dde',
+    'base-blue-dark': '#176caf',
 
     'base-background': '#1c1c1c',
     'base-header': '#2a2a2a'
@@ -23,6 +27,6 @@ export const defaultTheme = {
     "components-button-s": "0.75rem",
   },
   fonts: {
-    regular: "'Roboto'",
+    regular: "Inter",
   }
 }
