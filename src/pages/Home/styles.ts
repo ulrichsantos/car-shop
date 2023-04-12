@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ButtonHomePageComponent } from "./components/ButtonHome/styles";
 
 export const HomeContainer = styled.div`
   width: 100%;
@@ -45,6 +46,7 @@ export const ZeroCarContainer = styled.div`
   img {
     width: 70%;
     height: auto;
+    margin-bottom: 1rem;
   }
 `
 
@@ -57,11 +59,50 @@ export const ZeroCar = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: flex-start;
 
   > h2 {
     font-size: ${({ theme }) => theme.textSizes["title-title-l"]};
     color: ${({ theme }) => theme.colors["base-orange"]};
-    
+  }
+
+  > p {
+    font-size: ${({ theme }) => theme.textSizes["text-regular-m"]};
+    line-height: 1.5;
+  }
+`
+
+export const ButtonTest = styled(ButtonHomePageComponent)``
+
+export const SemiNewContainer = styled.div`
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  
+
+  img {
+    width: 70%;
+    height: auto;
+  }
+`
+
+export const SemiNew = styled.div`
+  width: 30%;
+  gap: 2rem;
+  padding: 5rem 2rem;
+  text-align: start;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  > h2 {
+    font-size: ${({ theme }) => theme.textSizes["title-title-l"]};
+    color: ${({ theme }) => theme.colors["base-orange"]};
   }
 
   > p {

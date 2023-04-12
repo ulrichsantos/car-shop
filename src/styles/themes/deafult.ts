@@ -2,13 +2,17 @@ export const defaultTheme = {
   colors: {
     'base-white': '#fff',
     'base-black': '#000',
-    'base-hover': '#D3D3D3',
+    "base-hover": "#D7D5D5",
+    "base-label": "#8D8686",
     'base-orange': '#ffba00',
     'base-blue': '#269dde',
     'base-blue-dark': '#176caf',
+    "base-error": "#f84747",
 
     'base-background': '#1c1c1c',
-    'base-header': '#2a2a2a'
+    'base-background-dark': '#141518',
+    'base-header': '#2a2a2a',
+
   },
   textSizes: {
     "title-title-xl": "3rem",
