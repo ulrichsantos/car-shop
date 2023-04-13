@@ -5,7 +5,6 @@ export const HeaderContainer = styled.header`
   height: 4rem;
   background: ${({ theme }) => theme.colors["base-header"]};
   padding-inline: 1.5rem;
-  position: absolute;
   z-index: 99;
   opacity: 0.8;
 

@@ -6,8 +6,7 @@ export const HomeContainer = styled.div`
   
   > img { 
     width: 100%;
-    height: 100vh;
-    max-height: 635px;
+    height: calc(100vh - 4rem);
   }
 `
 
