@@ -23,7 +23,7 @@ export const FinancingTitle = styled.div`
 export const FinancingForm = styled.form`
   width: 80%;
   margin-top: 4rem;
-  text-align: start;
+  text-align: center;
   padding: 2rem;
   background-color: ${({ theme }) => theme.colors["base-label"]};
 
@@ -32,10 +32,10 @@ export const FinancingForm = styled.form`
   };
   
   > form {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
 
     > p {

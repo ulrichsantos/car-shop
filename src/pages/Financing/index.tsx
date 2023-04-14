@@ -30,7 +30,7 @@ export function FinancingPage() {
             <input type="text" placeholder='Bairro'/>
             <input type="text" placeholder='Cidade/Estado'/>
 
-            Dados Profissionais
+            <p>Dados Profissionais</p>
             <input type="text" placeholder='Profissão'/>
             <input type="text" placeholder='Empresa onde trabalha'/>
             <input type="number" placeholder='CEP'/>
