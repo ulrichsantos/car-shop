@@ -1,14 +1,14 @@
+import { CardCarSemiNew } from './components/CardCarSemiNew'
 import { SemiNewCarsContainer, SemiNewCarsFilters } from './styles'
-import { Car } from 'phosphor-react'
 
 export function SemiNewCarsPage() {
   return (
     <SemiNewCarsContainer>
       <SemiNewCarsFilters>
         <div>
-          <h3>{<Car />} Encontre seu veículo</h3>
-          <input type="text" value="O que está procurando?" />
-          <input type="submit" value="Buscar" />
+          <h3>Encontre seu veículo</h3>
+          <input type="text" placeholder="O que está procurando?" />
+          <button>Buscar</button>
         </div>
         <form>
           <div>
@@ -23,12 +23,21 @@ export function SemiNewCarsPage() {
           </div>
           <div>
             <h3>Valor</h3>
-            <input type="number" placeholder="de R$" />
-            <input type="number" placeholder="até R$" />
-            <input type="submit" value="Encontrar Veículo"/>
+            <input className="value" type="number" placeholder="de R$" />
+            <input className="value" type="number" placeholder="até R$" />
+            <button>Encontrar veículo</button>
           </div>
         </form>
       </SemiNewCarsFilters>
+
+      <div className="container">
+        <CardCarSemiNew />
+        <CardCarSemiNew />
+        <CardCarSemiNew />
+        <CardCarSemiNew />
+        <CardCarSemiNew />
+        <CardCarSemiNew />
+      </div>
     </SemiNewCarsContainer>
   )
 }
