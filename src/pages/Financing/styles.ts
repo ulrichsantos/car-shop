@@ -5,7 +5,6 @@ export const FinancingSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2.5rem;
   text-align: center;
 `
 
@@ -14,9 +13,15 @@ export const FinancingTitle = styled.div`
   flex-direction: column;
   gap: 2.5rem;
 
-  > h1 {
+  h1 {
     font-size: ${({ theme }) => theme.textSizes["title-title-m"]};
-    color: ${({ theme }) => theme.colors["base-orange"]};
+    color: ${({ theme }) => theme.colors["base-error-dark"]};
+    font-weight: bold;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
   }
 `
 
@@ -25,7 +30,9 @@ export const FinancingForm = styled.form`
   margin-top: 4rem;
   text-align: center;
   padding: 2rem;
-  background-color: ${({ theme }) => theme.colors["base-label"]};
+  background-color: ${({ theme }) => theme.colors["base-header"]};
+  border-radius: 8px;
+  margin-bottom: 5rem;
 
   > h1 {
     margin-bottom: 2rem;
@@ -40,7 +47,7 @@ export const FinancingForm = styled.form`
 
     > p {
     font-weight: bold;
-    color: ${({ theme }) => theme.colors["base-black"]};
+    color: ${({ theme }) => theme.colors["base-white"]};
   }
 
     > input {

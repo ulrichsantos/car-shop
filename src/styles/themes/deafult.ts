@@ -8,6 +8,7 @@ export const defaultTheme = {
     'base-blue': '#269dde',
     'base-blue-dark': '#176caf',
     "base-error": "#f84747",
+    'base-error-dark': '#c71812',
     "base-gray": "#a9abaa",
 
     'base-background': '#1c1c1c',

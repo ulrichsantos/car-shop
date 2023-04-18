@@ -1,5 +1,10 @@
+import { ServicesContainer } from "./styles";
+import banner from '../../assets/Services/banner.jpg'
+
 export function ServicesPage() {
   return (
-    <h1>serviços</h1>
+    <ServicesContainer>
+      <img src={banner} alt="" />
+    </ServicesContainer>
   )
 }

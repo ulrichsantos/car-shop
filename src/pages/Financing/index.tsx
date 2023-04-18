@@ -1,16 +1,15 @@
 import { FinancingForm, FinancingSection, FinancingTitle } from './styles'
-import FinancingIMG from '../../assets/Financing/financing-title.jpg'
-import { Input } from '../../components/Input'
+import FinancingIMG from '../../assets/Financing/financiamento.jpg'
 
 export function FinancingPage() {
   return (
     <FinancingSection className="container">
       <FinancingTitle>
+        <img src={FinancingIMG} />
         <h1>
           Financie conosco, o melhor caminho para você chegar mais próximo do
           seu sonho!
         </h1>
-        <img src={FinancingIMG} />
       </FinancingTitle>
 
       <FinancingForm>
