@@ -1,13 +1,9 @@
 import styled from "styled-components";
 import { ButtonHomePageComponent } from "./components/ButtonHome/styles";
+import Swiper from "swiper";
 
 export const HomeContainer = styled.div`
   width: 100%;
-  
-  > img { 
-    width: 100%;
-    height: calc(100vh - 4rem);
-  }
 `
 
 export const HomeInfo = styled.div`
