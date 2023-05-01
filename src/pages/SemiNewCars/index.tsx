@@ -1,5 +1,14 @@
 import { CardCarSemiNew } from './components/CardCarSemiNew'
 import { SemiNewCarsContainer, SemiNewCarsFilters } from './styles'
+import axios from 'axios';
+
+axios.get('http://localhost:3000/carros')
+  .then(response => {
+    console.log(response.data);
+  })
+  .catch(error => {
+    console.error(error);
+  });
 
 export function SemiNewCarsPage() {
   return (
