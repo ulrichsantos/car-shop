@@ -1,16 +1,35 @@
+import { useEffect, useState } from 'react';
 import { CardCarSemiNew } from './components/CardCarSemiNew'
 import { SemiNewCarsContainer, SemiNewCarsFilters } from './styles'
 import axios from 'axios';
 
-axios.get('http://localhost:3000/carros')
-  .then(response => {
-    console.log(response.data);
-  })
-  .catch(error => {
-    console.error(error);
-  });
+export interface Carro {
+  valor: number;
+  marca: string;
+  modelo: string;
+  anoModelo: number;
+  combustivel: string;
+  codigoFipe: string;
+  mesReferencia: string;
+  tipoVeiculo: number;
+  siglaCombustivel: string;
+  dataConsulta: Date;
+}
 
 export function SemiNewCarsPage() {
+  const [carroInfo, setCarroInfo] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:3000/carros')
+    .then(response => {
+      setCarroInfo(response.data);
+      console.log(response.data);
+    })
+    .catch(error => {
+      console.error(error);
+    });
+  }, []);
+
   return (
     <SemiNewCarsContainer>
       <SemiNewCarsFilters>
@@ -40,12 +59,9 @@ export function SemiNewCarsPage() {
       </SemiNewCarsFilters>
 
       <div className="container">
-        <CardCarSemiNew />
-        <CardCarSemiNew />
-        <CardCarSemiNew />
-        <CardCarSemiNew />
-        <CardCarSemiNew />
-        <CardCarSemiNew />
+        {carroInfo.map((carro: Carro, index: number) => (
+          <CardCarSemiNew key={index} carro={carro}/>
+        ))}
       </div>
     </SemiNewCarsContainer>
   )
