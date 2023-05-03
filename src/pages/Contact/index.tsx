@@ -1,5 +1,6 @@
-import { ContactContainer } from './styles'
+import { AdmButton, ContactContainer } from './styles'
 import contact from '../../assets/Contact/fundo-contato.jpg'
+import { NavLink } from 'react-router-dom'
 
 export function ContactPage() {
   return (
@@ -18,6 +19,10 @@ export function ContactPage() {
         height="780"
         loading="lazy"
       ></iframe>
+
+      <AdmButton>
+        <NavLink to="/admin">Acesso administrativo</NavLink>
+      </AdmButton>
     </ContactContainer>
   )
 }

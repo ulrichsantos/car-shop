@@ -6,6 +6,7 @@ import { SemiNewCarsPage } from "./pages/SemiNewCars";
 import { FinancingPage } from "./pages/Financing";
 import { ServicesPage } from "./pages/Services";
 import { ContactPage } from "./pages/Contact";
+import { AdminPage } from "./pages/Contact/Admin";
 
 export function Router() {
   return (
@@ -17,6 +18,7 @@ export function Router() {
        <Route path="/financiamento" element={<FinancingPage />} />
        <Route path="/servicos" element={<ServicesPage />} />
        <Route path="/contato" element={<ContactPage />} />
+       <Route path="/admin" element={<AdminPage />} />
       </Route>
     </Routes>
   )
