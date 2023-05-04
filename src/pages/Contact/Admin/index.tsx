@@ -1,34 +1,33 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 import { AdminForm, AdminPageContainer } from './style'
 
 export function AdminPage() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const elements = event.currentTarget.elements as HTMLFormControlsCollection & {
-      login: {value: string},
-      password: {value: string}
-    };
+    const elements = event.currentTarget.querySelectorAll<HTMLInputElement>('input') as NodeListOf<HTMLInputElement>;
 
-    const login = elements.login.value;
-    const password = elements.password.value;
+    const login = elements[0].value;
+    const password = elements[1].value;
     if (login === 'admin' && password === 'admin') {
-      <NavLink to="/semiNovos" />
+      window.location.href = '/zeroKM'; 
     } else {
       alert("Login ou senha incorretos")
     }
   }
   return (
     <AdminPageContainer>
-      <AdminForm onSubmit={handleSubmit}>
-        <h1>Login</h1>
-        <hr />
+      <AdminForm>
+        <form onSubmit={handleSubmit}>
+          <h1>Login</h1>
+          <hr />
           <p>Seu acesso</p>
-          <input type="text" required placeholder='exemplo123'/>
+          <input type="text" required placeholder="exemplo123" />
 
           <p>Sua senha</p>
           <input type="password" />
 
-          <button type='submit'>Logar</button>
+          <button type="submit">Logar</button>
+        </form>
       </AdminForm>
     </AdminPageContainer>
   )

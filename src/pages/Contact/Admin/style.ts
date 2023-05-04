@@ -13,7 +13,7 @@ export const AdminPageContainer = styled.div`
   }
 `
 
-export const AdminForm = styled.form`
+export const AdminForm = styled.div`
   width: 40%;
   padding: 2rem 3rem;
   border-radius: 8px;
