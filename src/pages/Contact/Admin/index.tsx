@@ -9,7 +9,7 @@ export function AdminPage() {
     const login = elements[0].value;
     const password = elements[1].value;
     if (login === 'admin' && password === 'admin') {
-      window.location.href = '/zeroKM'; 
+      window.location.href = '/adminSystem'; 
     } else {
       alert("Login ou senha incorretos")
     }
