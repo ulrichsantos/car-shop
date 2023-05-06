@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { AdminSystemContainer } from "./style";
+import axios from 'axios';
 
 interface Carro {
   valor: number;
@@ -40,9 +41,15 @@ export function AdminSystemPage() {
     });
   };
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     
+    try {
+      await axios.post('localhost:3000/carros', formValues);
+    } catch (error) {
+      console.error('Erro ao adicionar o carro', error);
+    }
+
   };
 
   return (
