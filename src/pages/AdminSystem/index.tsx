@@ -43,6 +43,8 @@ export function AdminSystemPage() {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+
+    // aqui vai o código para inclusao das imagens
     
     try {
       await axios.post('localhost:3000/carros', formValues);
